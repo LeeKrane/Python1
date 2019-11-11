@@ -1,0 +1,5 @@
+letzte_km = input("Kilometerstand beim letzten Tankstopp[km]: ")
+heutige_km = input("Kilometerstand beim heutigen Tankstopp[km]: ")
+benzinverbrauch = input("Benzinverbrauch[L]: ")
+benzinpreis_pro_liter = input("Benzinpreis pro Liter[€]: ")
+print("-------\nDurchschnittlicher Benzinverbrauch[L/km]: " + str(float(benzinverbrauch) / (float(heutige_km) - float(letzte_km))) + "\nDurchschnittliche Benzinkosten[€/km]: " + str(float(benzinpreis_pro_liter) * float(benzinverbrauch) / (float(heutige_km) - float(letzte_km))))
